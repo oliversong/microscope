@@ -1,4 +1,4 @@
-if Posts.find().count() === 0
+if Posts.find().count() is 0
   Posts.insert(
     title: 'Introducing Telescope'
     author: 'Sacha Greif'
