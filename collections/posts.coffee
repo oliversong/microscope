@@ -1,6 +1,5 @@
 @Posts = new Meteor.Collection('posts')
 
-Posts.allow(
+Posts.allow
   insert: (userId, doc)->
     return !! userId
-)
