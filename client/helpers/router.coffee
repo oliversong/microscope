@@ -6,6 +6,11 @@ Meteor.Router.add
     and: (id)->
       Session.set 'currentPostId', id
 
+  '/posts/:_id/edit':
+    to: 'postEdit'
+    and: (id)->
+      Session.set('currentPostId', id)
+
   '/submit': 'postSubmit'
 
 Meteor.Router.filters
