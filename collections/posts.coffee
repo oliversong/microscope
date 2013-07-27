@@ -5,6 +5,11 @@ Posts.allow(
   remove: ownsDocument
 )
 
+Posts.deny(
+  update: (userId, post, fieldNames)->
+    return (_.without(fieldNames, 'url', 'title').length > 0)
+)
+
 Meteor.methods(
   post: (postAttributes)->
     user = Meteor.user()
