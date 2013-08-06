@@ -2,6 +2,8 @@
   "packages": {
     "router": {},
     "accounts-ui-bootstrap-dropdown": {},
-    "errors": {}
+    "errors": {},
+    "paginated-subscription": {},
+    "spin": {}
   }
 }

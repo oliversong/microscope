@@ -1,5 +1,5 @@
-Meteor.publish 'posts', ()->
-  return Posts.find()
+Meteor.publish 'posts', (limit)->
+  return Posts.find({}, {sort: {submitted: -1}, limit: limit})
 
 Meteor.publish 'comments', (postId)->
   return Comments.find(

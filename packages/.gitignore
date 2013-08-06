@@ -2,3 +2,5 @@ router
 page-js-ie-support
 accounts-ui-bootstrap-dropdown
 errors
+paginated-subscription
+spin
