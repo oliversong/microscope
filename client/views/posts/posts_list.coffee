@@ -27,5 +27,4 @@ Template.postsList.events(
   'click .load-more': (e)->
     e.preventDefault()
     @handle.loadNextPage()
-    debugger
 )
