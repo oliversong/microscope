@@ -31,7 +31,9 @@ Template.postItem.rendered = ()->
     previousPosition = instance.currentPosition
     delta = previousPosition - newPosition
     $this.css('top', delta + 'px')
+  else
+    $this.addClass('invisible')
 
   Meteor.defer ()->
     instance.currentPosition = newPosition
-    $this.css('top', '0px')
+    $this.css('top', '0px').removeClass('invisible')
