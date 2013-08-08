@@ -21,6 +21,17 @@ Template.postsList.helpers(
 
   allPostsLoaded: ()->
     @handle.ready() and Posts.find().count() < @handle.loaded()
+
+  postsWithRank: ()->
+    i = 0
+    options =
+      sort: @sort
+      limit: @handle.limit()
+
+    Posts.find({}, options).map (post)->
+      post._rank = i
+      i += 1
+      post
 )
 
 Template.postsList.events(
