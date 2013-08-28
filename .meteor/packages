@@ -7,3 +7,11 @@ preserve-inputs
 bootstrap
 coffeescript
 accounts-password
+standard-app-packages
+accounts-ui-bootstrap-dropdown
+errors
+HTML5-History-API
+page-js-ie-support
+paginated-subscription
+router
+spin
